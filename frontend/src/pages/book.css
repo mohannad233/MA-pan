@@ -1,0 +1,73 @@
+.book-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #2c2c2c; /* لون الخلفية الداكن */
+  }
+  
+  .demoPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: #89598c; /* لون خلفية الكتاب */
+    border: 1px solid #ddd;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+  }
+  
+  .demoPage h1 {
+    font-size: 24px;
+    color: #ffffff; /* لون النص */
+    margin-bottom: 20px;
+  }
+  
+  .book-items-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    width: 100%;
+  }
+  
+  .book-item {
+    text-align: center;
+    padding: 10px;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .book-item-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .book-item h2 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .book-item p {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .book-coming-soon {
+    font-size: 20px;
+    color: #ffffff; /* لون النص */
+    text-align: center;
+    padding: 20px;
+    background-color: #3e3e3e; /* لون خلفية "قريباً" */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  

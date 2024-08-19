@@ -1,0 +1,121 @@
+body {
+  margin: 0;
+  font-family: 'Arial, sans-serif';
+  background-color: #fff;
+  color: #4B0082;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+}
+
+.home-header {
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2); /* ظل خفيف حول الشعار */
+}
+
+.admin-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.admin-link {
+  color: #4B0082;
+  transition: color 0.3s;
+}
+
+.admin-link:hover {
+  color: #9370DB;
+}
+
+.home-nav {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+  position: relative; /* لطبقة الخلفية */
+  z-index: 2; /* لتكون الخلفية خلف الأزرار */
+}
+
+.nav-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+  background-color: #89598c; /* تغيير خلفية الروابط إلى البنفسجي */
+  font-size: 18px;
+  padding: 15px;
+  border-radius: 30px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.nav-link:hover {
+  background-color: #ae7fbe; /* تغيير خلفية الروابط عند التمرير */
+  transform: scale(1.05);
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 10px;
+}
+
+.social-icons a {
+  color: #4B0082;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #9370DB;
+}
+
+.home-background {
+  background-image: url('../images/back.jpg'); /* استخدام الخلفية */
+  background-size: contain; /* احتواء الصورة */
+  background-position: bottom; /* وضع الخلفية في الجزء السفلي */
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: -70%;
+  left: 50%;
+  width: 100%;
+  height: 90%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .home-nav {
+    gap: 10px;
+  }
+
+  .nav-link {
+    font-size: 16px;
+    padding: 12px;
+  }
+
+  .social-icons a {
+    font-size: 30px;
+  }
+
+  .admin-icon {
+    top: 10px;
+    right: 10px;
+  }
+}
